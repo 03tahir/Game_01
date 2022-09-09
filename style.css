@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#game{
+    height: 500px;
+    width: 390px;
+    border: 1px solid black;
+    margin: 1rem auto;
+    background:url(road_02.jpg) ;
+    background-size: contain;
+    overflow: hidden;
+}
+#yel_lam_01{
+    height: 100px;
+    width: 50px;
+    background-color: black;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    animation: move 2s linear  infinite  ;
+
+}
+#yel_lam_01 img{
+    height: 100px;
+}
+@keyframes move {
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 501px;
+    }
+    
+}
+#gr_lam{
+    height: 100px;
+    width: 50px;
+    background-color: red;
+    position: relative;
+    top: 250px;
+    left: 130px;
+    text-align: center;
+}
+#gr_lam img{
+    height: 100px;
+}
+
+#result{
+    height: 200px;
+    width: 400px;
+    background-color: rgb(75, 224, 102);
+    margin:  1rem auto;
+    border-radius: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(28, 32, 232);
+    display:none ;
+}
+#score{
+    font-size: 2.2rem;
+    color: rgb(168, 0, 56);
+}
+#btn{
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(15, 250, 250);
+    font-size: 25px;
+    margin-top: 10px;
+    cursor: crosshair;
+    text-transform: uppercase;
+}
